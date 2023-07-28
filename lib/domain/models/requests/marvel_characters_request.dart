@@ -1,5 +1,5 @@
 
-import 'package:marvel_app/utils/constants/environment.dart';
+import '../../../utils/constants/environment.dart';
 
 class MarvelCharactersRequest {
   final String publicKey;

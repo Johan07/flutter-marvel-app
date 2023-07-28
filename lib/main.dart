@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/config/router/app_routert.dart';
+import 'config/router/app_routert.dart';
 
 void main() {
   runApp(const MyApp());
