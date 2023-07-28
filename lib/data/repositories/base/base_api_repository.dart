@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
-import '../../../../utils/resources/data_state.dart';
+import '../../../utils/resources/data_state.dart';
 
 abstract class BaseApiRepository {
   @protected
