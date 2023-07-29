@@ -51,9 +51,9 @@ Contribuciones son bienvenidas. Abre un "Issue" o envía una "Pull Request" con 
 Este proyecto utiliza el API de Marvel. Todos los datos y recursos pertenecen a Marvel y están sujetos a sus términos de uso.
 
 ## Capturas
-![Pantalla de Inicio](screenshots/flutter_01.png)
-![Filtro de personajes](screenshots/flutter_03.png)
-![Pantalla de detalle](screenshots/flutter_02.png)
+<img src="screenshots/flutter_01.png" width="200">
+<img src="screenshots/flutter_03.png" width="200">
+<img src="screenshots/flutter_02.png" width="200">
 
 ## Proyecto Original
 Este proyecto se basa en el siguiente proyecto de GitHub, el cual sirvió como referencia y punto de partida para su desarrollo:
