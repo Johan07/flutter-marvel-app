@@ -16,7 +16,7 @@ class CharacterBoxWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        context.go('/details/:characterId');
+        context.push('/details/${character.id}');
       },
       child: Container(
         decoration: BoxDecoration(

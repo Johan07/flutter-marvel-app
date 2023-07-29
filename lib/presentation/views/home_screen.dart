@@ -38,7 +38,6 @@ class HomeScreen extends HookWidget {
                 child: CupertinoActivityIndicator(),
               );
             case MarvelCharactersFailed:
-              print(state.error);
               return Center(
                 child: IconButton(
                   icon: Icon(Icons.refresh),

@@ -15,7 +15,7 @@ final router = GoRouter(
       path: '/details/:characterId',
       builder: (context, state) {
         return DetailScreen(
-          characterId: state.pathParameters['characterId'],
+          characterId: state.pathParameters['characterId'] ?? '-1',
         );
       },
     )

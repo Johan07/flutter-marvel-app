@@ -45,4 +45,11 @@ class MarvelCharactersCubit
       filteredCharacters: filteredList,
     ));
   }
+
+  Character? getCharacterById(String characterId) {
+    return state.characters.cast<Character?>().firstWhere(
+          (character) => character?.id.toString() == characterId,
+          orElse: () => null,
+        );
+  }
 }
