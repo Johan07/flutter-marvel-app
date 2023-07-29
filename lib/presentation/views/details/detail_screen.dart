@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
-import 'package:marvel_app/presentation/cubits/character_detail/character_detail_cubit.dart';
-import 'package:marvel_app/presentation/cubits/marvel_characters/marvel_characters_cubit.dart';
 
-import '../widgets/detail/character_detail_scroll_view.dart';
+import '../home/cubits/marvel_characters/marvel_characters_cubit.dart';
+import 'cubits/character_detail/character_detail_cubit.dart';
+import 'widgets/character_detail_scroll_view.dart';
 
 class DetailScreen extends HookWidget {
   final String characterId;

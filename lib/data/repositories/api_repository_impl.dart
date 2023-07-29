@@ -1,4 +1,4 @@
-import 'package:marvel_app/data/datasources/remote/marvel_api_service.dart';
+import '../datasources/remote/marvel_api_service.dart';
 
 import 'base/base_api_repository.dart';
 import '../../domain/models/requests/marvel_characters_request.dart';

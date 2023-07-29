@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:marvel_app/utils/extensions/dio_response_extension.dart';
+import '../../../utils/extensions/dio_response_extension.dart';
 
 import '../../../domain/models/requests/marvel_characters_request.dart';
 import '../../../domain/models/responses/marvel_characters_response.dart';

@@ -1,8 +1,8 @@
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 
-import '../../../domain/models/character.dart';
-import '../base/base_cubit.dart';
+import '../../../../../domain/models/character.dart';
+import '../../../../cubits/base/base_cubit.dart';
 
 part 'character_detail_state.dart';
 

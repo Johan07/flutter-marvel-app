@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
-import 'package:marvel_app/domain/models/character.dart';
-import 'package:marvel_app/domain/models/requests/marvel_characters_request.dart';
-import 'package:marvel_app/domain/models/responses/marvel_characters_response.dart';
-import 'package:marvel_app/domain/repositories/api_repository.dart';
-import 'package:marvel_app/presentation/cubits/base/base_cubit.dart';
-import 'package:marvel_app/utils/resources/data_state.dart';
+import '../../../../../domain/models/character.dart';
+import '../../../../../domain/models/requests/marvel_characters_request.dart';
+import '../../../../../domain/models/responses/marvel_characters_response.dart';
+import '../../../../../domain/repositories/api_repository.dart';
+import '../../../../cubits/base/base_cubit.dart';
+import '../../../../../utils/resources/data_state.dart';
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 

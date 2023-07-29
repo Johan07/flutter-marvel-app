@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:marvel_app/presentation/widgets/home/character_scroll_view.dart';
 
-import '../../domain/models/character.dart';
-import '../cubits/marvel_characters/marvel_characters_cubit.dart';
+import '../../../domain/models/character.dart';
+import 'cubits/marvel_characters/marvel_characters_cubit.dart';
+import 'widgets/character_scroll_view.dart';
 
 class HomeScreen extends HookWidget {
   const HomeScreen({Key? key}) : super(key: key);

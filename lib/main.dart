@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:marvel_app/domain/repositories/api_repository.dart';
-import 'package:marvel_app/presentation/cubits/marvel_characters/marvel_characters_cubit.dart';
+import 'domain/repositories/api_repository.dart';
 import 'config/router/app_routert.dart';
 import 'config/themes/app_themes.dart';
 import 'dependencies.dart';
+import 'presentation/views/home/cubits/marvel_characters/marvel_characters_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:marvel_app/presentation/views/detail_screen.dart';
+import '../../presentation/views/details/detail_screen.dart';
 
-import '../../presentation/views/home_screen.dart';
+import '../../presentation/views/home/home_screen.dart';
 
 final router = GoRouter(
   routes: [

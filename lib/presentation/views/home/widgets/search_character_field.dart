@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:marvel_app/presentation/cubits/marvel_characters/marvel_characters_cubit.dart';
+
+import '../cubits/marvel_characters/marvel_characters_cubit.dart';
 
 class SearchCharacterField extends StatelessWidget {
   const SearchCharacterField({

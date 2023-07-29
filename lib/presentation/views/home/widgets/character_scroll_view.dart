@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_app/domain/models/character.dart';
-import 'package:marvel_app/presentation/widgets/home/search_character_field.dart';
+import '../../../../domain/models/character.dart';
 
 import 'character_sliver_grid.dart';
+import 'search_character_field.dart';
 
 class CharactersScrollView extends StatelessWidget {
   final List<Character> characters;
