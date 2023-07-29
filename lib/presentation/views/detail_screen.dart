@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:marvel_app/presentation/cubits/marvel_characters/marvel_characters_cubit.dart';
 
+import '../widgets/detail/character_detail_scroll_view.dart';
+
 class DetailScreen extends StatelessWidget {
   final String characterId;
   const DetailScreen({Key? key, required this.characterId}) : super(key: key);
@@ -24,13 +26,14 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
             title: Text(
-              character?.name ?? '',
+              'About character',
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.white,
               ),
             ),
           ),
+          body: CharacterDetailScrollView(character: character),
         );
       },
     );

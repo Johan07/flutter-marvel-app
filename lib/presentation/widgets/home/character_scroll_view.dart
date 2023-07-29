@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marvel_app/domain/models/character.dart';
-import 'package:marvel_app/presentation/widgets/search_character_field.dart';
+import 'package:marvel_app/presentation/widgets/home/search_character_field.dart';
 
 import 'character_sliver_grid.dart';
 

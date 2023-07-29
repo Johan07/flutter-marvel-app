@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../domain/models/character.dart';
+import '../../../domain/models/character.dart';
 import 'character_box_widget.dart';
 
 class CharacterSliverGrid extends StatelessWidget {

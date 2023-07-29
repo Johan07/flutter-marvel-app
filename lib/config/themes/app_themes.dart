@@ -16,6 +16,13 @@ abstract class AppTheme {
       colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: Colors.black,
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          shape: BeveledRectangleBorder(),
+          foregroundColor: Colors.white,
+          backgroundColor: Color(0xFFec1d24),
+        ),
+      ),
       textTheme: GoogleFonts.montserratTextTheme(),
     );
   }
