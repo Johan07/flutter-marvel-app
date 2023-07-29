@@ -31,6 +31,9 @@ Este proyecto es una aplicación móvil desarrollada en Flutter que consume el A
 9. **url_launcher: ^6.1.12**
    - Permite abrir enlaces externos desde la aplicación.
 
+10. **mockito: ^5.4.2**
+   - Simplifica las pruebas unitarias mediante la creación de objetos simulados 
+
 ## Instrucciones de Ejecución
 
 1. Asegúrate de tener Flutter instalado en tu sistema.
