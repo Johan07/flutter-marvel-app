@@ -16,7 +16,7 @@ class MarvelCharactersRequest {
 
   Map<String, dynamic> toRequestParams() {
     return <String, dynamic>{
-      'apiKey': publicKey,
+      'apikey': publicKey,
       'limit': limit,
       'offset': offset,
     };
