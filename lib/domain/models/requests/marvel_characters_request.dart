@@ -10,7 +10,7 @@ class MarvelCharactersRequest {
   MarvelCharactersRequest({
     this.publicKey = kPublicKey,
     this.privateKey = kPrivateKey,
-    this.limit = 20,
+    this.limit = 100,
     this.offset = 0,
   });
 

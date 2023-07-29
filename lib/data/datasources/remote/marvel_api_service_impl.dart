@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:marvel_app/utils/extensions/dio_response_extension.dart';
 
 import '../../../domain/models/requests/marvel_characters_request.dart';
 import '../../../domain/models/responses/marvel_characters_response.dart';
@@ -15,8 +16,9 @@ class MarvelApiServiceImpl implements MarvelApiService {
   Future<Response<MarvelCharactersResponse>> getMarvelCharacters(
     MarvelCharactersRequest request,
   ) async {
-    return await dio.get(
-      kBaseUrl,
+    // convert map<String, dynamic> to marvelCharacterresponse using fromJson
+    final result = await dio.get(
+      kBaseUrl + kAllCharacters,
       options: Options(
         headers: {
           'Content-Type': 'application/json; charset=utf-8',
@@ -27,6 +29,10 @@ class MarvelApiServiceImpl implements MarvelApiService {
         ..._getAuthenticationParams(request.privateKey, request.publicKey),
       },
     );
+    final value = MarvelCharactersResponse.fromJson(
+      result.data,
+    );
+    return result.changeData<MarvelCharactersResponse>(value);
   }
 
   Map<String, dynamic> _getAuthenticationParams(
