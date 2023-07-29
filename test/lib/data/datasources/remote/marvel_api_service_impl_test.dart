@@ -22,7 +22,7 @@ void main() {
       marvelApiService = MarvelApiServiceImpl(mockDio);
     });
 
-    test('getMarvelCharacters - Success', () async {
+    test('test_marvel_api_service_get_marvel_characters_returns_marvel_characters_response', () async {
       final successfulResponseData = fixture('marvel_characters.json');
       final successfulResponse = Response(
         requestOptions: RequestOptions(),
@@ -44,7 +44,7 @@ void main() {
       expect(response.data!, isA<MarvelCharactersResponse>());
     });
 
-    test('getMarvelCharacters - Error (Unauthorized)', () async {
+    test('test_marvel_api_service_get_marvel_characters_throws_dio_exception', () async {
       final errorException = DioException(requestOptions: RequestOptions());
       when(
         mockDio.get(

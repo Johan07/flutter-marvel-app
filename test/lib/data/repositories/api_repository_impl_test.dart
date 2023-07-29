@@ -25,7 +25,7 @@ void main() {
     apiRepository = ApiRepositoryImpl(mockMarvelApiService);
   });
   group('ApiRepositoryImpl', () {
-    test('DataSuccess with MarvelCharactersResponse', () async {
+    test('test_api_repository_get_marvel_characters_data_success', () async {
       final successfulResponseData = fixture('marvel_characters.json');
       final successfulResponse = Response<MarvelCharactersResponse>(
         data: MarvelCharactersResponse.fromJson(
@@ -52,7 +52,7 @@ void main() {
       expect(result.error, isNull);
     });
 
-    test('DataFailed with DioException', () async {
+    test('test_api_repository_get_marvel_characters_data_failed', () async {
       final errorMessage = {
         "code": "InvalidCredentials",
         "message": "The passed API key is invalid."
