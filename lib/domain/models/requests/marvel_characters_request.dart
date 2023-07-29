@@ -3,13 +3,11 @@ import '../../../utils/constants/environment.dart';
 
 class MarvelCharactersRequest {
   final String publicKey;
-  final String privateKey;
   final int limit;
   final int offset;
 
   MarvelCharactersRequest({
     this.publicKey = kPublicKey,
-    this.privateKey = kPrivateKey,
     this.limit = 100,
     this.offset = 0,
   });
@@ -19,7 +17,9 @@ class MarvelCharactersRequest {
       'apikey': publicKey,
       'limit': limit,
       'offset': offset,
-      'events': 29 // Only infinity war
+      'events': 29, // Only infinity war
+      'ts': '1690588815262',
+      'hash': 'f13baab2150ee900eb49b0228b34cf12',
     };
   }
 }
