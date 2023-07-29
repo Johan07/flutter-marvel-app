@@ -19,6 +19,7 @@ class MarvelCharactersRequest {
       'apikey': publicKey,
       'limit': limit,
       'offset': offset,
+      'events': 29 // Only infinity war
     };
   }
 }

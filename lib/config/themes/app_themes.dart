@@ -7,7 +7,7 @@ abstract class AppTheme {
       useMaterial3: true,
       appBarTheme: const AppBarTheme(
         elevation: 0,
-        color: Colors.transparent,
+        color: Color(0xFFec1d24),
         iconTheme: IconThemeData(color: Colors.black),
       ),
       scaffoldBackgroundColor: Colors.white,
@@ -16,7 +16,7 @@ abstract class AppTheme {
       colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: Colors.black,
       ),
-      textTheme: GoogleFonts.montserratAlternatesTextTheme(),
+      textTheme: GoogleFonts.montserratTextTheme(),
     );
   }
 }

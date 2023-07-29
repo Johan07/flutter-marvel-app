@@ -12,9 +12,11 @@ final router = GoRouter(
       },
     ),
     GoRoute(
-      path: '/',
+      path: '/details/:characterId',
       builder: (context, state) {
-        return DetailScreen();
+        return DetailScreen(
+          characterId: state.pathParameters['characterId'],
+        );
       },
     )
   ],
