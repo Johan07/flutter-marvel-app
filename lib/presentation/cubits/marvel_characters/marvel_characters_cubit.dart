@@ -32,4 +32,17 @@ class MarvelCharactersCubit
       }
     });
   }
+
+  void filterCharacters(String searchText) {
+    if (state is! MarvelCharactersSuccess) return;
+    final filteredList = state.characters.where((character) {
+      if (character.name == null) return false;
+      return character.name!.toLowerCase().contains(searchText.toLowerCase());
+    }).toList();
+
+    emit(MarvelCharactersSuccess(
+      characters: data,
+      filteredCharacters: filteredList,
+    ));
+  }
 }

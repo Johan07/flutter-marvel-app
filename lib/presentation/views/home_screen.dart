@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+import '../../domain/models/character.dart';
 import '../cubits/marvel_characters/marvel_characters_cubit.dart';
 import '../widgets/character_scroll_view.dart';
 
@@ -47,8 +48,12 @@ class HomeScreen extends HookWidget {
                 ),
               );
             case MarvelCharactersSuccess:
+              final List<Character> characters =
+                  state.filteredCharacters.isNotEmpty
+                      ? state.filteredCharacters
+                      : state.characters;
               return CharactersScrollView(
-                characters: state.characters,
+                characters: characters,
               );
             default:
               return const SizedBox.shrink();

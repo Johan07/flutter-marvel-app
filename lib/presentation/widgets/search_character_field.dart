@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:marvel_app/presentation/cubits/marvel_characters/marvel_characters_cubit.dart';
 
 class SearchCharacterField extends StatelessWidget {
   const SearchCharacterField({
@@ -28,7 +30,9 @@ class SearchCharacterField extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        onTap: () {},
+        onChanged: (text) {
+          context.read<MarvelCharactersCubit>().filterCharacters(text);
+        },
       ),
     );
   }
