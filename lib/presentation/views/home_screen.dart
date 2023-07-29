@@ -48,7 +48,9 @@ class HomeScreen extends HookWidget {
               );
             case MarvelCharactersSuccess:
               final List<Character> characters =
-                  state.filteredCharacters.isNotEmpty
+                  (state as MarvelCharactersSuccess)
+                          .filteredCharacters
+                          .isNotEmpty
                       ? state.filteredCharacters
                       : state.characters;
               return CharactersScrollView(

@@ -2,15 +2,7 @@ part of 'marvel_characters_cubit.dart';
 
 @immutable
 abstract class MarvelCharactersState {
-  final List<Character> characters;
-  final List<Character> filteredCharacters;
-  final DioException? error;
-
-  const MarvelCharactersState({
-    this.characters = const [],
-    this.filteredCharacters = const [],
-    this.error,
-  });
+  const MarvelCharactersState();
 }
 
 class MarvelCharactersLoading extends MarvelCharactersState {
@@ -18,9 +10,30 @@ class MarvelCharactersLoading extends MarvelCharactersState {
 }
 
 class MarvelCharactersSuccess extends MarvelCharactersState {
-  const MarvelCharactersSuccess({super.characters, super.filteredCharacters});
+  final List<Character> characters;
+  final List<Character> filteredCharacters;
+  const MarvelCharactersSuccess({
+    this.characters = const [],
+    this.filteredCharacters = const [],
+  });
 }
 
 class MarvelCharactersFailed extends MarvelCharactersState {
-  const MarvelCharactersFailed({super.error});
+  final DioException? error;
+
+  const MarvelCharactersFailed({
+    this.error,
+  });
+}
+
+class MarvelCharacterDetailSuccess extends MarvelCharactersState {
+  final Character character;
+  const MarvelCharacterDetailSuccess({required this.character});
+}
+
+class MarvelCharacterDetailFailed extends MarvelCharactersState {
+  final Exception? error;
+  const MarvelCharacterDetailFailed({
+    this.error,
+  });
 }

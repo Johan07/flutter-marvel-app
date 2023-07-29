@@ -15,7 +15,6 @@ class MarvelApiServiceImpl implements MarvelApiService {
   Future<Response<MarvelCharactersResponse>> getMarvelCharacters(
     MarvelCharactersRequest request,
   ) async {
-    // convert map<String, dynamic> to marvelCharacterresponse using fromJson
     final result = await dio.get(
       kBaseUrl + kAllCharacters,
       options: Options(
