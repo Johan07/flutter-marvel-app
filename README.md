@@ -50,13 +50,11 @@ Contribuciones son bienvenidas. Abre un "Issue" o envía una "Pull Request" con 
 
 Este proyecto utiliza el API de Marvel. Todos los datos y recursos pertenecen a Marvel y están sujetos a sus términos de uso.
 
-## Inspiración Visual
-
-La inspiración visual para el diseño de esta aplicación se tomó de la siguiente imagen:
-
-![Inspiración Visual](https://flutterawesome.com/content/images/2022/08/Code-2022-12-54-49.jpg)
+## Capturas
+![Pantalla de Inicio](screenshots/flutter_01.png)
+![Filtro de personajes](screenshots/flutter_03.png)
+![Pantalla de detalle](screenshots/flutter_02.png)
 
 ## Proyecto Original
-
 Este proyecto se basa en el siguiente proyecto de GitHub, el cual sirvió como referencia y punto de partida para su desarrollo:
 [Flutter-Bloc-Marvel-App](https://github.com/Ansh-Rathod/Flutter-Bloc-Marvel-App.git)
